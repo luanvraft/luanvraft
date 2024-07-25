@@ -1,9 +1,4 @@
 <!DOCTYPE HTML>
-<!--
-	Dimension by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 
 <head>
@@ -17,24 +12,25 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images//favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images//favicon-16x16.png">
-    <link rel="manifest" href="images//site.webmanifest">
+    <link rel="manifest" href="manifest.json">
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
 
-<link rel="manifest" href="manifest.json">
-
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="application-name" content="Portifolio">
-<meta name="apple-mobile-web-app-title" content="Portifolio">
-<meta name="theme-color" content="#ffffff">
-<meta name="msapplication-navbutton-color" content="#ffffff">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="msapplication-starturl" content="https://luanvraft.github.io/">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-<link rel="icon" type="image/png" sizes="192/192" href="/android-chrome-192x192.png">
-<link rel="apple-touch-icon" type="image/png" sizes="192/192" href="/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512/512" href="/android-chrome-512x512.png">
-<link rel="apple-touch-icon" type="image/png" sizes="512/512" href="/android-chrome-512x512.png">
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                } catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
 </head>
 
 <body class="is-preload">
