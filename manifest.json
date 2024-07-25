@@ -1,8 +1,8 @@
 {
   "name": "Portifolio-Luan",
   "short_name": "Portifolio",
-  "start_url": "https://luanvraft.github.io/",
-  "scope": "/",
+  "start_url": "index.html",
+  "scope": ".",
   "lang": "pt-BR",
   "theme_color": "#ffffff",
   "display": "standalone",
