@@ -1,15 +1,21 @@
 {
-"name": "Portifolio-Luan",
-"short_name": "Portifolio", 
-"theme_color":"#ffffff",
-"background_color":"#ffffff",
-"display":"standalone",
-"icons":[
-    {"src":"/android-chrome-192x192.png",
-    "sizes":"192x192",
-    "type":"image/png"},
-    {"src":"/android-chrome-512x512.png",
-    "sizes":"512x512",
-    "type":"image/png"}
-    ]
+  "name": "Portifolio-Luan",
+  "short_name": "Portifolio",
+  "start_url": "https://luanvraft.github.io/",
+  "scope": "/",
+  "lang": "pt-BR",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192/192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512/512",
+      "type": "image/png"
+    }
+  ]
 }
