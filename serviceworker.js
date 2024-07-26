@@ -16,8 +16,6 @@ const filesToCache = [
 self.addEventListener("install", function (e) {
 	e.waitUntil(
 		caches.open(staticCacheName).then(function (cache) {
-			// return cache.addAll(["/"]);
-			console.log('ios');
 			return cache.addAll(filesToCache);
 		})
 	);
