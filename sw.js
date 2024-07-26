@@ -2,14 +2,14 @@ var staticCacheName = "pwa_dice";
 
 const filesToCache = [
 	'./index.html',
-  './css/fontwasome-all.min.css',
+	'./css/fontwasome-all.min.css',
 	'./css/main.css',
 	'./css/noscript.css',
-  './js/breakpoints.min.js',
-  './js/browser.min.js',
-  './js/jquery.min.js',
-  './js/main.js',
-  './js/util.js',
+	'./js/breakpoints.min.js',
+	'./js/browser.min.js',
+	'./js/jquery.min.js',
+	'./js/main.js',
+	'./js/util.js',
 	'./images/'
 ];
  
